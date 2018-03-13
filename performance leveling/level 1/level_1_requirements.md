@@ -1,8 +1,8 @@
 # Level 1 - Requirements
 
-1.  [ ] Must be comfortable learning all types of programming (C#, SQL, JavaScript, HTML, CSS, LESS)
+1.  [x] Must be comfortable learning all types of programming (C#, SQL, JavaScript, HTML, CSS, LESS)
 
-1.  [ ] Understands the process of developing software and whatever responsibilities that are defined are adhered to (e.g. stand ups, commits, pull requests)
+1.  [x] Understands the process of developing software and whatever responsibilities that are defined are adhered to (e.g. stand ups, commits, pull requests)
 
 1.  [ ] Takes presentation topics seriously
 
