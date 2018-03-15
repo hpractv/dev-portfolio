@@ -1,0 +1,73 @@
+# C#
+
+- [x] Scope
+- [x] Abstract Class
+- [x] Static vs Non-Static
+- [ ] Method overloading
+- [ ] Interfaces
+- Interfaces - Advanced
+  - [ ] Explicit implementation
+- [ ] Struct
+- [ ] Enums
+- [ ] Properties vs Fields
+- [ ] Attributes
+- [ ] Debug vs Release builds
+- [ ] String interpolation
+- [ ] Extension methods
+- [ ] DateTime vs DateTimeOffset
+- [ ] Casting or coercing types into other types
+- [ ] Anonymous types
+- [ ] Object and Array initializers
+- [ ] Generics
+- Generics - Advanced
+  - [ ] Covariance / contravariance
+  - [ ] Type inference
+  - [ ] Constraints
+  - [ ] Open and closed types
+- [ ] Bitwise operations
+- [ ] Nullable
+- [ ] Delegates
+- [ ] Lambdas
+- [ ] IEnumerable
+- [ ] IQueryable
+- [ ] Reflection
+- Reflection - Advanced
+  - [ ] Generic types
+  - [ ] Binding flags
+  - [ ] Type scanning
+  - [ ] Performance
+- [ ] LINQ
+- LINQ - Advanced
+  - [ ] Joins
+  - [ ] Grouping
+  - [ ] Set operators
+  - [ ] Expression trees
+  - [ ] Providers
+- [ ] Async / await / Tasks
+- Async / await / Tasks - Advanced
+  - [ ] Synchronization contexts
+  - [ ] Multiple Task composition
+  - [ ] Controlling access to shared resources
+  - [ ] Cancellation
+  - [ ] How the compiler handles `await`
+- [ ] Serialization
+- [ ] Conditional compilation symbols
+- [ ] Boxing / Unboxing
+- [ ] Regular Expressions
+- Garbage Collection - Advanced
+  - [ ] Generations
+  - [ ] Large object heap
+  - [ ] Analyzing memory usage
+- [ ] Dynamic
+- Standard language keywords
+  - [ ] `in` / `out`
+  - [ ] `ref`
+  - [ ] `default`
+  - [ ] `readonly` / `const`
+  - [ ] `public` / `private` / `protected`
+  - [ ] `params`
+  - [ ] `yield return` / `yield break`
+  - [ ] `sealed`
+  - [ ] `override` / `virtual`
+  - [ ] `using`
+  - [ ] `lock`
