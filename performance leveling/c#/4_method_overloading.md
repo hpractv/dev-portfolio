@@ -1,9 +1,8 @@
 # C# Method Overloading
 
-Method overloading is a means of reusing a method name or class constructor name with different arguments.  This allows for different program or logic execution based on how well 
+Method overloading is a means of reusing a method name while accepting different argument types or number of arguments.  This allows for different execution logic which is based on the parameters passed in to th method.  This can also be extended to a class constructor.
 
 ```c
-
 public class GreatClass{
     public string Name { get; set; }
     
@@ -26,10 +25,10 @@ public class GreatClass{
     public string welcome(string name)
      {
          var greeting = string.IsNullOrWhiteSpace(name)
-                ? "student
+                ? "student"
                 : name;
 
-        => "Welcome {greeting} to the {this.Name}!";
+        return "Welcome {greeting} to the {this.Name}!";
      }
 }
 
