@@ -3,7 +3,7 @@
 - [x] Scope
 - [x] Abstract Class
 - [x] Static vs Non-Static
-- [ ] Method overloading
+- [x] Method overloading
 - [ ] Interfaces
 - Interfaces - Advanced
   - [ ] Explicit implementation

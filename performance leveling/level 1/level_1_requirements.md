@@ -6,7 +6,7 @@
 
 1.  [ ] Takes presentation topics seriously
 
-1.  [ ] Skilled with using your editor(s) of choice (Visual Studio, Sublime, Vim, Emacs, etc)
+1.  [x] Skilled with using your editor(s) of choice (Visual Studio, Sublime, Vim, Emacs, etc)
 
 1.  [ ] Is open to and solicits feedback on their pull requests, and utilizes that feedback
 
