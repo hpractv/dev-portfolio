@@ -4,9 +4,9 @@
 - [x] Abstract Class
 - [x] Static vs Non-Static
 - [x] Method overloading
-- [ ] Interfaces
+- [x] Interfaces
 - Interfaces - Advanced
-  - [ ] Explicit implementation
+  - [x] Explicit implementation
 - [ ] Struct
 - [ ] Enums
 - [ ] Properties vs Fields

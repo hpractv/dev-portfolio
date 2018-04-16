@@ -83,6 +83,8 @@ public class SeaBass : IFish, ISport
 
 In example 2, `IFish` still inherits from the `IAnimal` interface, but then diverges to add contract characteristics more relevant to a fish.  This way an `Aquarium` could use the `IFish` interface to determine whether or not a fish goes in the seawater tank or not.  `SeaBass` additionally implements the interface `ISport`.  This allows us to specify more contractual extension, but don't necessarily run through inheritance the animal interface.
 
+## Explicit Implementation
+
 Additionally, interface components can be implemented implicitly or explicitly.  To implement implicitly allows the contract method or property to be accessed natively through the class's methods or fields.  When implementing explicitly, the contract method or property can <em>only</em> be accessed on the class when it is casted to the explicitly implemented interface.
 
 **Inheritance Example 3**
