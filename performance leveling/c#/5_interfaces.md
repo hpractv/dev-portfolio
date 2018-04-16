@@ -110,6 +110,6 @@ Based on the class definitions in Example 3, all the properties of `SeaBass` can
 
 ```c
 var sbo = new SeaBass();
-sob.freshWhater = false;
+sob.freshWater = false;
 ((ISport)sbo).huntedWith = huntingImplement.Spear;
 ```
