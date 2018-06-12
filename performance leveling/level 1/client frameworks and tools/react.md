@@ -1,5 +1,7 @@
  React
 
+ React is a JavaScript Framework that allows for built-in state and property management of "classes" to be handled on the client-side.  It is also capable of automating state updates when component controls are properly mapped to the state containers.
+
  * Components - self contained element that handles its own rendering/display, state, and property marshalling.
 
  * Lifecycle Methods
@@ -29,10 +31,34 @@
     }
     ```
 
- * Events
-    * Action handlers for UI queues
+ * Events - Action handlers for UI cues and async operations
 
- * Refs - are used as a handle to DOM elements such that they can be used to pull attributes 
+ * Refs - Are used as a handle to DOM elements such that they can be used to pull attributes and values
 
- * JSX
- * Enzyme
+ * JSX - JS extension that allows javascript to accept markup and descriptor language to be embedded in code such that it can be parsed natively.
+
+ ```js
+export class Actionator extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = { message: "Resting..." };
+    }
+
+    takeAction(value: string) {
+        this.state.setState(prevState => {...prevState, message: value});
+    }
+
+    public render() {
+        const value = <h1>Display Me!</h1>;
+
+        return <div>
+            <div>{this.state.message}</div>
+            <button onclick={takeAction(value)}>Action!</button>
+        </div>;
+    }
+}
+ ```
+
+In the above example, the JavaScript engine can wholly understand the class declarations, methods, and properties.  It can also understand the presentation layer markup wire-up any events.
+
+ * Enzyme - A JS Testing framework that works with React it is usually used in combination with Jasmine.  It allows for a suite of tests to be setup and run client-side to test the logic and processes of an application.
