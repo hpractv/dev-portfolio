@@ -115,3 +115,86 @@ var sbo = new SeaBass();
 sob.freshWater = false;
 ((ISport)sbo).huntedWith = huntingImplement.Spear;
 ```
+
+
+## Follow-up Questions
+_What is the Interface Segregation Principle?_
+
+Interface Segregation is the idea that an interface's contract should only contain the minimum method an property definitions that are necessary to accomplish the consuming application's task.  Any extra definitions that don't directly apply to the consumer application workflow should be removed or moved to a more appropriate interface declaration.
+
+_What purpose does explicit implementation fill?_
+
+Explicit implementation allows for a specific set of interface activities to be defined and only utilized through the proper interface reference path.  For instance, an `IPersonalMortgage` interface may have a `CalculateInterest` method that uses specific parameters on basic a amortization formula.  Where an `ICommercialMortgage` interface should have a lower associated interest rate compounded at different intervals in its `CalculateInterest` method.  Both are available in a `Mortgage` class, but have the same polymorphism.
+
+When instantiating and using the `Mortgage` class, the consuming application is forced to use the proper interface in order to call the appropriate `CalculateInterest` method.  This keeps the resulting interfaces lean, but provides very a delineated means of calling the appropriate version of the interest method.
+
+I've included an example below mostly becuase it was actually fun to build the proof-of-concept.
+
+```c
+public interface IPersonalMortgage
+{
+	double compounds { get; }
+	double CalculateInterest(double principle, double periods);
+}
+
+public interface ICommercialMortgage
+{
+	double compounds { get; }
+	double CalculateInterest(double principle, double periods);
+}
+
+public class Mortgage : IPersonalMortgage, ICommercialMortgage
+{
+	public double PersonalInterestRate { get; }
+	public double CommercialInterestRate { get; }
+
+	double IPersonalMortgage.compounds { get; } = 12.0;
+	double ICommercialMortgage.compounds { get; } = 4.0;
+		
+
+	public Mortgage(double personalInterestRate, double commercialInterestRate)  {
+		this.PersonalInterestRate = personalInterestRate;
+		this.CommercialInterestRate = commercialInterestRate;		
+	}
+		
+	
+	double IPersonalMortgage.CalculateInterest(double principle, double periods)
+		=> calculateInterest(
+			principle,
+			PersonalInterestRate,
+			periods,
+			((IPersonalMortgage)this).compounds);
+
+	double ICommercialMortgage.CalculateInterest(double principle, double periods)
+		=> calculateInterest(
+			principle,
+			CommercialInterestRate,
+			periods,
+			((ICommercialMortgage)this).compounds);
+
+	private double calculateInterest(double principle, double interest, double periods, double compounds)
+		=> principle * Math.Pow(1 + (interest/compounds), compounds * periods) - principle;
+}
+
+void Main()
+{
+
+	var instance = new Mortgage(0.052, 0.043);
+	var principle = 150_000;
+	var years = 15;
+
+	Console.WriteLine(
+		$"Total Personal Interest: {((IPersonalMortgage)instance).CalculateInterest(principle, years): $###,###,###,##0.00}"
+	);
+
+	Console.WriteLine(
+		$"Total Commercial Interest: {((ICommercialMortgage)instance).CalculateInterest(principle, years): $###,###,###,##0.00}"
+	);
+
+
+}
+
+//OUTPUT:
+//Total Personal Interest:  $176,669.89
+//Total Commercial Interest:  $134,915.62
+```
