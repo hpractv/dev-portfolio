@@ -7,7 +7,7 @@
 - [x] Interfaces
 - Interfaces - Advanced
   - [x] Explicit implementation
-- [ ] Struct
+- [x] Struct
 - [ ] Enums
 - [ ] Properties vs Fields
 - [ ] Attributes

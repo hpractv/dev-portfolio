@@ -128,7 +128,7 @@ Explicit implementation allows for a specific set of interface activities to be 
 
 When instantiating and using the `Mortgage` class, the consuming application is forced to use the proper interface in order to call the appropriate `CalculateInterest` method.  This keeps the resulting interfaces lean, but provides very a delineated means of calling the appropriate version of the interest method.
 
-I've included an example below mostly becuase it was actually fun to build the proof-of-concept.
+I've included an example below mostly because it was actually fun to build the proof-of-concept.
 
 ```c
 public interface IPersonalMortgage
