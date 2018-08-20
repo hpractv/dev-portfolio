@@ -7,8 +7,8 @@
 - [x] Interfaces
 - Interfaces - Advanced
   - [x] Explicit implementation
-- [x] Struct
-- [ ] Enums
+- [O] Struct
+- [O] Enums
 - [ ] Properties vs Fields
 - [ ] Attributes
 - [ ] Debug vs Release builds
