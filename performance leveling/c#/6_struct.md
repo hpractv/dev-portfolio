@@ -18,7 +18,7 @@ A struct may multiple parameterized constructors, but may no contain a default c
 
 ### How should equality be handled in a `struct`?
 
-Equality between structs be done through overloaded `==` and `!=` operators that evaluate the fields/properties that make up the struct (see example below).
+Equality evaluation between structs should be done through overloaded `==` and `!=` operators that evaluate the fields/properties that make up the struct (see example below).
 
 ```csharp
 public struct BaseStruct
