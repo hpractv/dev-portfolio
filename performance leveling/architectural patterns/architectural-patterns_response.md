@@ -9,6 +9,11 @@ Research the following architectural patterns and be comfortable speaking about 
 - Where have you seen this pattern used/abused in our systems?
 - What are the maintenance concerns with utilizing this pattern, both during development and during operation in production?
 
+Notes:
+
+[Exercises in .NET with Andras Nemes](https://dotnetcodr.com/architecture-and-patterns/)
+
+
 <hr/>
 
 - [ ] MVC - Model, View, Controller
