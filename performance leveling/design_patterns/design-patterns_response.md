@@ -27,7 +27,7 @@ Research the following design patterns and be comfortable speaking about things 
 
 
 ## Creation
-- [X] <a id="singleton" href="#top">Singleton</a> - single static version of a object is always return on instantiation request
+- [X] <a id="singleton" href="#top">Singleton</a> - single static version of a object is always returned on instantiation request
 
 ```c#
 void Main()
