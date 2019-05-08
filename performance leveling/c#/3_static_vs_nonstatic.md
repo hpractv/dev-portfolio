@@ -48,8 +48,8 @@ public class RegularClass{
 public static void Main(string[] args){
     var rClass = new RegularClass("Regular Name");
 
-    Console.WriteLine($"Class Name: { rClass.Name }";
-    Console.WriteLine($"Now: { RegularClass.StaticNow().ToString("yyyy-MM-dd") }";
+    Console.WriteLine($"Class Name: { rClass.Name }");
+    Console.WriteLine($"Now: { RegularClass.StaticNow().ToString("yyyy-MM-dd") }");
 }
 ```
 
@@ -57,4 +57,4 @@ public static void Main(string[] args){
 
 `Class Name: Regular Name`
 
-`Passed/Set Name: Name gets set here`
+`Now: 2019-05-08`
