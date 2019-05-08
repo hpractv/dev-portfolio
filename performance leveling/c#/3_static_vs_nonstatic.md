@@ -2,7 +2,7 @@
 
 Static classes and functions allow for calls to properties and methods of a class without instantiation.  For example:
 
-```c
+```csharp
 public static class AStaticCalledClass {
     public static string Name { get; set ;}
 }
@@ -34,7 +34,7 @@ public static void Main(string[] args){
 
 Static properties and methods may also be declared as part of a non-static class. This allows for contractual access to a class without having instantiate a copy of it.
 
-```c
+```csharp
 public class RegularClass{
     public string Name { get; set; }
     
